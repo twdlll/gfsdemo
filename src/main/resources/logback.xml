@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration debug="false" scan="false">
+    <contextName>PNPL</contextName>
+    <appender name="stdout" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <charset>UTF-8</charset>
+            <!--<pattern>[%d{HH:mm:ss}] [%p] [%logger{0}] [%line] : %m%n</pattern>-->
+            <pattern>[%d{HH:mm:ss}] [%p] [%logger{0}] : %m%n</pattern>
+        </encoder>
+    </appender>
+
+    <root level="info">
+        <appender-ref ref="stdout"/>
+    </root>
+</configuration>
